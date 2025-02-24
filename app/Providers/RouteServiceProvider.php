@@ -31,7 +31,7 @@ class RouteServiceProvider extends ServiceProvider
 
         // Define all routes
         $this->routes(function () {
-            Route::middleware(['api', 'check.api'])
+            Route::middleware('api')
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
@@ -40,7 +40,6 @@ class RouteServiceProvider extends ServiceProvider
         });
 
         // Register custom middlewares
-        Route::aliasMiddleware('check.api', \App\Http\Middleware\CheckApiAccess::class);
         Route::aliasMiddleware('track.visitor', \App\Http\Middleware\TrackVisitor::class);
         Route::aliasMiddleware('dashboard.security.headers', \App\Http\Middleware\DashboardSecurityHeaders::class);
         Route::aliasMiddleware('cache.control', \App\Http\Middleware\CacheControlMiddleware::class);

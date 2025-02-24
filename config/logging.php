@@ -54,7 +54,7 @@ return [
 
     'stack' => [
       'driver' => 'stack',
-      'channels' => explode(',', env('LOG_STACK', 'single')),
+      'channels' => ['single'],
       'ignore_exceptions' => false,
     ],
 
@@ -62,6 +62,11 @@ return [
       'driver' => 'single',
       'path' => storage_path('logs/laravel.log'),
       'level' => env('LOG_LEVEL', 'debug'),
+      'formatter' => \Monolog\Formatter\LineFormatter::class,
+      'formatter_with' => [
+        'format' => "[%datetime%] %channel%.%level_name%: %message% %context% %extra%\n",
+        'dateFormat' => 'Y-m-d H:i:s',
+      ],
       'replace_placeholders' => true,
     ],
 
@@ -69,7 +74,12 @@ return [
       'driver' => 'daily',
       'path' => storage_path('logs/laravel.log'),
       'level' => env('LOG_LEVEL', 'debug'),
-      'days' => env('LOG_DAILY_DAYS', 14),
+      'days' => 14,
+      'formatter' => \Monolog\Formatter\LineFormatter::class,
+      'formatter_with' => [
+        'format' => "[%datetime%] %channel%.%level_name%: %message% %context% %extra%\n",
+        'dateFormat' => 'Y-m-d H:i:s',
+      ],
       'replace_placeholders' => true,
     ],
 

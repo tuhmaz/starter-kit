@@ -1,6 +1,14 @@
 {
   "Actions": "الإجراءات",
   "Active": "نشط",
+  "welcome": "مرحبا",
+  "Welcome to ": "مرحبا بكم في",
+  "Educational Topics": "موضوعات التعليمية",
+  "Articles Management": "ادارة المقالات",
+  "Manage and organize your educational content": "ادارة وتنظيم محتوى التعليم",
+  "No Articles Found": "لا يوجد مقالات",
+  "Start by adding your first article": "اضغط هنا لاضافة المقال الأول",
+  "Clear Log": "مسح الأخطاء",
   "home": "الرئيسية",
   "Home": "الرئيسية",
   "Study Plans": "خطط الدراسة",
@@ -30,7 +38,7 @@
   "Articles List": "قائمة المقالات",
   "Back": "رجوع",
   "Browse": "تصفح",
-  
+
   "Choose file": "اختر ملف",
   "Class": "الصف",
   "Lessons": "الصفوف",
@@ -75,7 +83,7 @@
   "Enter your email and we'll send you instructions to reset your password":"اضغط هنا لإعادة تعيين كلمة المرور",
   "Sign In":"تسجيل الدخول",
   "Send Reset Link":"إرسال رابط إعادة الضبط",
- 
+
   "New on our platform?": "مستخدم جديد على منصتنا؟",
   "Reset Password":"اعادة تعيين كلمة المرور",
   "Your new password must be different from previously used passwords":"كلمة المرور الجديدة يجب ان تكون مختلفة من كلمات المرور المستخدمة سابقا",
@@ -274,7 +282,7 @@
    "Save Draft": "النسخة المسودة",
    "welcome_school_classes": "مرحبا بك في صفوف الدراسية",
    "Our Classes": "صفوف الدراسية",
-   
+
    "Class Name": "اسم الصف",
    "Role Name": "اسم الادوار",
    "Permission Name": "اسم الصلاحية",
@@ -287,7 +295,7 @@
    "Site Language": "لغة الموقع",
    "Sitemap Management": "ادارة خريطة الموقع",
    "Available Sitemap Links": "الروابط المتاحة في خريطة الموقع",
- 
+
    "Manage your sitemap": "ادارة خريطة الموقع",
    "You can generate a new sitemap to update search engines with the latest changes to your website.": "يمكنك توليد خريطة موقع جديدة لتحديث محركات البحث بالنسبة لاحدث التغييرات في موقعك.",
    "Select Database for Sitemap Generation": "اختر قاعدة البيانات لتوليد خريطة الموقع",

@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <td>${error.line}</td>
                         <td>
                             <button class="btn btn-danger btn-sm delete-error" data-error-id="${error.id}">
-                                {{ __('Delete') }}
+                              Delete
                             </button>
                         </td>
                     </tr>
